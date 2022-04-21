@@ -1,48 +1,45 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Speed Racer</title>
-    <!-- Lib -->
-    <script src="./lib/p5.min.js"></script>
-    <script src="./lib/p5.dom.min.js"></script>
-    <script src="./lib/p5.sound.min.js"></script>
-    <script src="./lib/p5.play.js"></script>
+<!DOCTYPE html><html lang="en"><head>
+  <script src="libraries/p5.js"></script>
+  <script src="libraries/p5.dom.min.js"></script>
+  <script src="libraries/p5.play.js"></script>
 
-    <!-- Sweet Alert c40-->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.min.js"
-      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./lib/sweetalert.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./lib/sweetalert.css" />
+  <script src="js/form.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/player.js"></script>
 
-    <link rel="stylesheet" href="style.css" />
+   
 
-    <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
 
-    <script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBWu3ZcyQhLebsOhLasDrX37BoZxyRb9us",
-  authDomain: "codingclass-b5944.firebaseapp.com",
-  databaseURL: "https://codingclass-b5944-default-rtdb.firebaseio.com",
-  projectId: "codingclass-b5944",
-  storageBucket: "codingclass-b5944.appspot.com",
-  messagingSenderId: "977815760752",
-  appId: "1:977815760752:web:ebc22bb9574f53f55529b5"
+  apiKey: "AIzaSyBZprfDl-4fq3ZBBgmjM6cx-ujU6zAjlW0",
+  authDomain: "fruitcatcherfsr.firebaseapp.com",
+  databaseURL: "https://fruitcatcherfsr-default-rtdb.firebaseio.com",
+  projectId: "fruitcatcherfsr",
+  storageBucket: "fruitcatcherfsr.appspot.com",
+  messagingSenderId: "1024559305930",
+  appId: "1:1024559305930:web:531a6cfe0b0ce5efde1033"
 };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+  
+  
+ 
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
 
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    </script>
-  </head>
-  <body>
-    <script src="./js/Game.js"></script>
-    <script src="./js/Form.js"></script>
-    <script src="./js/Player.js"></script>
-    <script src="./sketch.js"></script>
-  </body>
-</html>
+</head>
+<body>
+  <script src="sketch.js"></script>
+
+
+</body></html>
